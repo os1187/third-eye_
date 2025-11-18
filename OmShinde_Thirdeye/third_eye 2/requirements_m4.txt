@@ -1,0 +1,40 @@
+# Apple M4 Optimized Requirements
+# Core ML and PyTorch with MPS support
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Essential for M4 optimization - 4x speed improvement
+coremltools>=7.0
+
+# Computer Vision and ML
+opencv-python>=4.8.0
+ultralytics>=8.0.0
+transformers>=4.30.0
+Pillow>=9.5.0
+numpy>=1.24.0
+
+# Performance monitoring
+psutil>=5.9.0
+
+# Apple-specific optimizations
+scikit-image>=0.20.0  # For advanced image processing on M4
+scipy>=1.10.0  # Optimized for Apple Silicon
+
+# Optional but recommended
+accelerate>=0.20.0  # For Hugging Face model optimization
+datasets>=2.12.0  # For potential model fine-tuning
+requests>=2.31.0  # For dataset downloading
+pyyaml>=6.0  # For YAML handling
+joblib>=1.3.0  # For parallel processing
+tqdm>=4.65.0  # For progress bars (already in requirements)
+
+# Web framework (optional)
+flask>=2.3.0
+
+# Development tools
+tqdm>=4.65.0
+matplotlib>=3.7.0
+
+# Note: These packages are optimized for Apple Silicon
+# Install with: pip install -r requirements_m4.txt
